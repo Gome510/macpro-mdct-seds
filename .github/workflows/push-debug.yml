@@ -1,0 +1,15 @@
+name: Push Debug
+
+on:
+  push:
+    branches:
+      - "*"
+      - "!skipci*"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run echo command
+      run: echo "this job ran"
+
