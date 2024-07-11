@@ -13,9 +13,9 @@
 
 SEDS is the CMCS MDCT application for collecting state data related to Medicaid and CHIP quarterly enrollment data on a quarterly basis. The collected data assists CMCS in monitoring, managing, and better understanding Medicaid and CHIP programs.
 
-## Architecture
+Project Goals:
 
-![Architecture Diagram](./.images/architecture.svg?raw=true)
+- 
 
 ## Git Policies, Activities and Notes
 
@@ -41,18 +41,18 @@ On each PR, a linter and prettier check runs. These checks must pass for a PR to
 - Run Prettier using `npx prettier --write .`
 
 
-## Local Dev
+## Quick Start
 
 ### Running MDCT Workspace Setup
 Team members are encouraged to setup all MDCT Products using the script located in the [MDCT Tools Repository](https://github.com/Enterprise-CMCS/macpro-mdct-tools). Please refer to the README for instructions running the MDCT Workspace Setup. After Running workspace setup team members can continue in this README for instructions on running the application locally. 
 
-#### For developers that have run workspace setup running the applicaiton locally please run the following
+#### For developers that have run workspace setup, running the application locally, please run the following
 1) cd ~/Projects/macpro-mdct-seds/
 2) `./run local --update-env` or `./run local` 
 
    note: the `./run local --update-env` command will reach out to 1Password to bring in secret values and populate .env files that are git ignored. If you use the `./run local` command you will need to have either previously run with the `--update-env flag` or provide your own .env files.
 
-#### For developers that cannot run the workspace setup script or wish to only run SEDS see steps below.
+#### For developers that cannot run the workspace setup script or wish to only run SEDS, see steps below.
 If you do not set don't have yarn, nvm, or java installed, see [Requirements](#requirements)
 
 Ensure you either have a 1Password account and have 1Password CLI installed. Alternatively, reach out to the team for an example of .env files.
@@ -246,6 +246,12 @@ To contribute:
 
 Pull requests are being accepted.
 
+## Architecture
+
+![Architecture Diagram](./.images/architecture.svg?raw=true)
+
+**General Structure** - 
+
 ## Slack Webhooks:
 
 This repository uses 3 webhooks to publish to  3 different channels all in CMS Slack.
@@ -262,7 +268,7 @@ This repository uses 3 webhooks to publish to  3 different channels all in CMS S
 - Secrets are added to GitHub secrets by GitHub Admins 
 - Development secrets are maintained in a 1Password vault
 
-## License
+## Copyright and license
 
 [![License](https://img.shields.io/badge/License-CC0--1.0--Universal-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
 
